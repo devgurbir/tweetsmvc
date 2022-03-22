@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>All Users</title>
+    </head>
+    <body>
+        <h2>All Users: <%= total %></h2>
+        <% users.forEach(user => { %>
+        <div style="display: flex; width: 300px; gap: 10px">
+                <div style="padding: 10px"><%= user.username %></div>
+                <div style="padding: 10px"><%= user.age %></div>
+                <div style="padding: 10px"><%= user.email %></div>
+                <div style="padding: 10px"><a href="/tweets/<%= user._id %>">Tweets</a></div>
+        </div>
+        <% }) %>
+    </body>
+</html>

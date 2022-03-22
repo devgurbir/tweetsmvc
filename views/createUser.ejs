@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Create User</title>
+    </head>
+    <body>
+        <div style="width: 300px;">
+        <form action="/users/create" method="post" enctype="multipart/form-data" style="display: flex; flex-direction: column;">
+            <input type="text" name="username" placeholder="Username"/>
+            <input type="password" name="password" placeholder="password"/>
+            <input type="number" name="age" placeholder="age"/>
+            <input type="email" name="email" placeholder="email"/>            
+            <input type="file" name="avatar" />
+            <input type="submit" name="submit" />
+        </form>
+        </div>
+    </body>
+</html>
